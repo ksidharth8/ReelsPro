@@ -4,7 +4,7 @@
 import mongoose from "mongoose";
 
 // Defining the MONGODB_URI environment variable.
-const MONGODB_URI = process.env.MONGO_URI!; // ! is used to tell typescript that the variable is defined.
+const MONGODB_URI = process.env.MONGODB_URI!; // ! is used to tell typescript that the variable is defined.
 
 // Checking if the MONGODB_URI environment variable is defined.
 if (!MONGODB_URI) {
