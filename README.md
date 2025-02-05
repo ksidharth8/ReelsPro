@@ -1,36 +1,152 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Reels Pro
+
+A web application to watch and share short videos with friends and family. Built using Next.js and React.
+
+## Tech Stack
+
+-  **Next.js** - A React framework for production
+
+## Project Structure
+
+```
+reels-pro/
+    ├── src/
+    |   ├── app/
+    │   |   ├── api/
+    |   |   |   ├── auth/
+    |   |   |   |   |── [...nextauth]/
+    |   |   |   |   |   └── route.ts
+    |   |   |   |   |
+    |   |   |   |   └── register/
+    |   |   |   |       └── route.ts
+    |   |   |   |
+    |   |   |   ├── imagekit-auth/
+    |   |   |   |   └── route.ts
+    |   |   |   |
+    |   |   |   └── videos/
+    |   |   |       └── route.ts
+    |   |   |
+    |   |   ├── components/
+    |   |   |   ├── FileUpload.tsx
+    |   |   |   ├── Header.tsx
+    |   |   |   └── Providers.tsx
+    |   |   |
+    |   |   ├── login/
+    |   |   |   └── page.tsx
+    |   |   |
+    |   |   |── register/
+    |   |   |   └── page.tsx
+    |   |   |
+    |   |   |── global.css
+    |   |   |── layout.tsx
+    |   |   └── page.tsx
+    │   |
+    │   ├── lib/
+    │   |   ├── api-client.ts
+    │   |   ├── db.ts
+    │   |   └── nextAuthOptions.ts
+    │   |
+    │   ├── models/
+    │   |   ├── User.ts
+    │   |   └── Video.ts
+    │   |
+    │   └── middleware.ts
+    |
+    ├── .env
+    ├── .gitignore
+    |── eslint.config.mjs
+    ├── package.json
+    ├── README.md
+    ├── LICENSE
+    ├── next.config.js
+    |── postcss.config.js
+    |── tailwind.config.js
+    ├── tsconfig.json
+    └── types.d.ts
+```
 
 ## Getting Started
 
-First, run the development server:
+To get a local copy up and running follow these simple steps.
 
-```bash
+### Prerequisites
+
+-  Node.js
+-  npm or yarn
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/ksidharth8/reels-pro.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+   or
+   ```sh
+   yarn install
+   ```
+
+## Deployment
+
+To deploy the project, follow these steps:
+
+1. Build the project
+   ```sh
+   npm run build
+   ```
+2. Start the server
+   ```sh
+   npm start
+   ```
+
+## How to Run
+
+To run the project locally, use:
+
+```sh
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## How to Use
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Open your browser and navigate to `http://localhost:3000`
+2. Explore the features of the application
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Future Work
 
-## Learn More
+-  Add more features
+-  Improve UI/UX
+-  Optimize performance
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Distributed under the MIT License. See `LICENSE` for more information.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Acknowledgements
 
-## Deploy on Vercel
+-  [Next.js Documentation](https://nextjs.org/docs)
+-  [React](https://reactjs.org/)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## How to Contribute
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## Support or Contact
+
+For support, please contact [your_email@example.com](mailto:your_email@example.com).
+
+## References
+
+-  [Next.js](https://nextjs.org/)
+-  [React](https://reactjs.org/)
+
+## Disclaimer
+
+This project is for educational purposes only.
